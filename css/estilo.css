@@ -1,0 +1,518 @@
+body {
+  color: #000;
+	background: #F1F1F1;
+	font-family: "arial";
+	transition: .3s ease all;
+  }
+  body.dark{
+	background:  #000;
+  color: #fff;
+  }
+.navbar
+{
+	background: #192060;
+	position: sticky;
+	bottom: 0;
+	top: 0;
+}
+.navbar a
+{
+	display: inline-block;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: arial;
+}
+.navbar a:hover
+{
+	color: yellow;
+}
+.contenedor
+{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.switch{
+	background: #343D5B;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+  }
+  .switch span{
+	width:30px;
+	height:30px;
+	line-height:30px;
+	display:block;
+	color:#fff;
+	background: none;
+  }
+  .switch::after{
+	  content: "";
+	display:block;
+	background: #f1f1f1;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:0;
+	left:0;
+	right:unset;
+	border-radius: 100px;
+	transition: .3s ease all;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+  }
+  .switch.active{
+	background: orange;
+	color: #000
+  }
+  .switch.active::after{
+	left:unset;
+	right:0;
+  }
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} 
+
+h1
+{
+  font-size: 20;
+}
+
+#conte-intro {
+	height: 410px;
+	margin: auto;
+	width: 1000px;
+}
+#txt-intro1 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro1:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro1 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838550258401017896/e3logo.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro1, #img-intro1 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+#txt-intro2 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro2:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro2 {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro2 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838553266383880212/nr.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro2, #img-intro2 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+#txt-intro3 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro3:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro3 {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro3 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838675195094237204/sublogod.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro3, #img-intro3 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+b
+{
+	text-align: left;
+	font-size: 20px;
+	font-family: Arial;
+}
+#txt-intro4 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro4:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro4 {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro4 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838685601598537738/sky.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro4, #img-intro4 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
+#txt-intro5 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro5:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro5 {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro5 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838689462836789248/botw.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro5, #img-intro5 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+#txt-intro6 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro6:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro6 {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro6 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838550258401017896/e3logo.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro6, #img-intro6 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+#txt-intro7 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro7:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro7 {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro7 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838701257513762836/gs.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro7, #img-intro7 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+#txt-intro8 {
+	background: #0042f7;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 350px;
+	padding: 30px;
+	width: 730px;
+}
+#txt-intro8:hover {
+	background: #000cb8;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #222;
+   -moz-box-shadow: 5px 10px 6px 2px #222;
+   -o-box-shadow: 5px 10px 6px 2px #222;
+   box-shadow: 5px 10px 6px 2px #222;
+}
+#titulo-intro8 {
+	background: #0042f7;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 990px;
+}
+#img-intro8 {
+	background: url(https://cdn.discordapp.com/attachments/608162468103061524/838701264203284550/p5s.png);
+	border: 1px solid;
+	border-color: rgb(0, 2, 128);
+	border-radius: 8px;
+	height: 350px;
+	vertical-align: top;
+	width: 250px;
+}
+#txt-intro8, #img-intro8 {
+	display: inline-block;
+	margin-left:5px;
+	margin-top: 5px;
+}
